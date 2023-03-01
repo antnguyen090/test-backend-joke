@@ -44,7 +44,6 @@ let funnyFunc = (check)=>{
     let jsonStr = getCookie('tracking')
     let arr     = JSON.parse(jsonStr)
     let nextJoke = arr[arr.length-1].index + 1
-    console.log("adasd" + nextJoke)
     let nextContent = contentJoke[nextJoke+1]
     let obj = {index: nextJoke, category: category}
     arr.push(obj)
