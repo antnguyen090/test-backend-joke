@@ -1,8 +1,147 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{ 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+ }
+ .col-2 {
+  float: left;
+  width: 50%;
 }
 
-a {
-  color: #00B7FF;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ #page-wrapper{
+  width: 100%;
+ }
+
+ .main-header, .main-footer, .container {
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.header__right img{
+  width: 50px;
+}
+
+.header__left img{
+  width: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__right{
+  min-height: 65px;
+}
+
+
+.main-header .header__right h4 {
+  display: block;
+  text-align: right;
+  font-weight: 300;
+  color: grey;
+  font-style: italic;
+}
+
+.main-header .header__right span {
+  color: black;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.main-footer p{
+  text-align: center;
+  margin: 3% 25%;
+}
+
+.main-footer p:first-child{
+  font-weight: 100;
+  font-size: 15px;
+  color: darkgray;
+  line-height: 20px;
+}
+
+.main-footer p:last-child{
+  font-weight: 300;
+  font-size: 17px;
+  color: gray;
+  line-height: 20px;
+}
+
+.container .title{
+  position: relative;
+  background-color: rgb(72, 155, 72);
+  color: white;
+  min-height: 150px;
+  text-align: center;
+}
+
+.container .title .text{
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .title .text p:first-child{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.container .title .text p:last-child{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.container .content{
+  margin: 3% 25%;
+}
+
+.container .content .text{
+  text-align: center;
+  line-height: 25px;
+}
+
+.container .btn {
+  appearance: none;
+    -webkit-appearance: none;
+  cursor: pointer;
+  padding: 12px;
+  min-width: 100px;
+  border: 0px;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+}
+
+.container .btn-funny {
+  background: #3498db;
+  color: #ffffff;
+}
+
+.btn-funny:hover {
+  background: #2980b9;
+  color: #ffffff;
+}
+
+.container .btn-notFunny {
+  background: rgb(72, 155, 72);
+  color: #ffffff;
+}
+
+.container .btn-notFunny:hover {
+  background: rgb(103, 172, 103);
+  color: #ffffff;
+}
+
+.container .button{
+  text-align: center;
+  margin-top: 15%;
 }
